@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment #21</title>
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <script
+      defer
+      src="https://kit.fontawesome.com/404707c296.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="src/js/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="registration__form--container">
+        <div class="registration__form--wrapper">
+          <div class="form__image--container">
+            <img src="src/images/form-image.png" alt="" />
+          </div>
+          <div class="form__container">
+            <header class="form__header">
+              <h2 class="form__title">create your account</h2>
+
+              <!-- progress indicator -->
+              <div class="progress__steps--container">
+                <span class="progress__step step__persona--num"></span>
+                <span class="progress__step step__email"></span>
+                <span class="progress__step step__password"></span>
+              </div>
+            </header>
+
+            <form
+              class="registration__form"
+              id="registrationForm"
+              action=""
+              novalidate
+            >
+              <div class="form__groups">
+                <!-- Personal Number -->
+                <div class="form__group">
+                  <label for="userPersonalNum">personal number</label>
+                  <input
+                    type="text"
+                    name="userPersonalNum"
+                    id="userPersonalNum"
+                    inputmode="numeric"
+                    placeholder="enter your personal number"
+                    minlength="11"
+                    required
+                  />
+                  <!-- Error Box -->
+                  <div
+                    class="error__container"
+                    id="personal__number-error"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="error__message"
+                      >Please enter a valid personal number</span
+                    >
+                  </div>
+                </div>
+
+                <!-- User Email -->
+                <div class="form__group">
+                  <label for="userEmail">email</label>
+                  <input
+                    type="email"
+                    name="userEmail"
+                    id="userEmail"
+                    placeholder="enter your email address"
+                    required
+                  />
+                  <!-- Error Box -->
+                  <div
+                    class="error__container"
+                    id="personal__number-error"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="error__message"
+                      >Please enter a valid personal number</span
+                    >
+                  </div>
+                </div>
+
+                <!-- User password -->
+                <div class="form__group">
+                  <label for="userPassword">password</label>
+                  <input
+                    type="password"
+                    name="userPassword"
+                    id="userPassword"
+                    placeholder="create password"
+                    minlength="8"
+                    required
+                  />
+                  <!-- Error Box -->
+                  <div
+                    class="error__container"
+                    id="personal__number-error"
+                    role="alert"
+                    aria-live="polite"
+                  >
+                    <i
+                      class="fa-solid fa-circle-exclamation"
+                      aria-hidden="true"
+                    ></i>
+                    <span class="error__message"
+                      >Please enter a valid personal number</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <button class="register__btn" id="registerBtn">Register</button>
+            </form>
+          </div>
+        </div>
+
+        <dialog class="dialog__succsess">
+          <div class="dialog__wrapper">
+            <div class="dialog__content">
+              <h3 class="dialog__title">Welcome to our platform</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
+                quam labore, nulla placeat veniam soluta excepturi, quae
+                expedita magni ullam qui error fugit minima fugiat blanditiis
+                delectus deserunt.
+              </p>
+            </div>
+            <button class="dialog__btn" id="dialogBtn">close</button>
+          </div>
+        </dialog>
+      </section>
+    </main>
+  </body>
+</html>
